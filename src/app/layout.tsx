@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
+import Cursor from "@/components/Cursor";
 
 const fraunces = Fraunces({
   variable: "--font-display",
@@ -44,6 +45,7 @@ export default function RootLayout({
     >
       <body>
         <SmoothScroll>{children}</SmoothScroll>
+        <Cursor />
       </body>
     </html>
   );
